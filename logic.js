@@ -47,3 +47,19 @@ function color() {
         count++
     }
 }
+function getRandomFact(){
+    const settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://numbersapi.p.rapidapi.com/random/trivia?json=true&fragment=true&max=20&min=10",
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "1e4891a135mshdc731ea5590d392p147859jsnc2ac3dced0ae",
+            "x-rapidapi-host": "numbersapi.p.rapidapi.com"
+        }
+    };
+    
+    $.ajax(settings).done(function (response) {
+    	document.getElementById("weather").innerHTML = `${response.number} is ${response.text}`;
+    });
+}
