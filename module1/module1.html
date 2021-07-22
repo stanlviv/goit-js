@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../logic.js"></script>
+    <script src="task1.js"  type="text/javascript"></script>
+    <script src="task2.js"  type="text/javascript"></script>
+    <script src="task3.js"  type="text/javascript"></script>
+    <script src="task4.js"  type="text/javascript"></script>
+    <script src="task5.js"  type="text/javascript"></script>
+    <script src="task6.js"  type="text/javascript"></script>
+    <script>
+        function taskButton(text, element, functionToCall){
+            console.log("===== " + element + " =====")
+            document.getElementById(element).innerHTML = element + "<br>" + text + "<hr>";
+            functionToCall();
+        }
+    </script>
+	<title>Module 01</title>
+</head>
+<body onmousewheel="color()">
+    <div class="topnav">
+        <a class="active" href="../index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Modules ⇩
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="module1.html">Module 1</a>
+                <a href="#">Module 2</a>
+                <a href="#">Module 3</a>
+            </div>
+        </div>
+        <a href="#" id="weather" onclick="showWeather('weather')">Show Weather</a>
+    </div>
+    <h4>
+        Open browser console (F12)
+    </h4>
+    <div class="task" id="task1">
+        <button onclick="taskButton(text1, 'task1', task1)">Task 01</button>
+    </div>
+    <div class="task" id="task2">
+        <button onclick="taskButton(text2, 'task2', task2)">Task 02</button>
+    </div>
+    <div class="task" id="task3">
+        <button onclick="taskButton(text3, 'task3', task3)">Task 03</button>
+    </div>
+    <div class="task" id="task4">
+        <button onclick="taskButton(text4, 'task4', task4)">Task 04</button>
+    </div>
+    <div class="task" id="task5">
+        <button onclick="taskButton(text5, 'task5', task5)">Task 05</button>
+    </div>
+    <div class="task" id="task6">
+        <button onclick="taskButton(text6, 'task6', task6)">Task 06</button>
+    </div>
+    <footer>
+        <p>St. Polishchuk</p>
+        <!-- <p><a href="javascript:location.reload(true)">Refresh Page</a></p> -->
+        <!-- <p><a href="#">Move up</a></p> -->
+    </footer>
+</body>
+</html>

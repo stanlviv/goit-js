@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>JS Training</title>
+</head>
+<body onmousewheel="color()">
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Modules ⇩
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="module1/module1.html">Module 1</a>
+                <a href="#">Module 2</a>
+                <a href="#">Module 3</a>
+            </div>
+        </div>
+        <a href="#" id="weather" onclick="showWeather('weather')">Show Weather</a>
+    </div>
+    <div class="topnews">
+        <div>
+            <h3>MODULE 01</h3>
+            <p><a href="module1/module1.html">HomeWork1</a></p>
+        </div>
+        <div>
+            <h3>MODULE 02</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+        <div>
+            <h3>MODULE 03</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+        <div>
+            <h3>MODULE 04</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+        <div>
+            <h3>MODULE 05</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+        <div>
+            <h3>MODULE 06</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+    </div>
+    <div>
+        <img class="train" id="train" src="train.gif" onclick="move()">
+    </div>
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+ <script>
+   $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+ </script>
+    <footer>
+        <p>St. Polishchuk</p>
+        <!-- <p><a href="javascript:location.reload(true)">Refresh Page</a></p> -->
+        <!-- <p><a href="#">Move up</a></p> -->
+    </footer>
+</body>
+</html>
