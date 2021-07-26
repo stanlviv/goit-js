@@ -51,7 +51,7 @@ function getRandomFact(){
     const settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://numbersapi.p.rapidapi.com/random/trivia?json=true&fragment=true&max=20&min=10",
+        "url": "https://numbersapi.p.rapidapi.com/random/trivia?json=true&fragment=true&max=100&min=1",
         "method": "GET",
         "headers": {
             "x-rapidapi-key": "1e4891a135mshdc731ea5590d392p147859jsnc2ac3dced0ae",
