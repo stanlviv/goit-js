@@ -47,6 +47,7 @@ function color() {
         count++
     }
 }
+
 function getRandomFact(){
     const settings = {
         "async": true,
