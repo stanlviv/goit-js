@@ -6,9 +6,10 @@ html {
 body {
     /* background-image: url("Backgrounds_in_CSS.jpg"); */
     /* background-color: lavender; */
+    background-position: 20px 50px, center;
     text-align: center;
     margin: 0%;
-    /* height: 100%; */
+    height: max-content;
     transition-property: background-color;
     transition-duration: 1s;
     background-repeat: no-repeat;
@@ -31,15 +32,15 @@ body {
 }
 
 button {
-    color: grey;
-    background-color: white;
-    margin: 1%;
+    color: white;
+    background-color: #333;
+    margin: 2%;
 }
 
 button:hover {
     border-radius: 10px;
     color: white;
-    background-color: grey;
+    background-color: #4CAF50;
     transition-property: background-color;
     transition-duration: 1s;
 }
@@ -131,7 +132,6 @@ button:hover {
     color: #4CAF50;
     font: 800;
 }
-
 .topnews div p {
     color: gold;
 }
@@ -140,7 +140,6 @@ button:hover {
     transform: scale(1.5);
     background-color: rgb(128, 128, 128, 0.9);
 }
-
 footer {
     position: static;
     bottom: 0;
@@ -229,4 +228,7 @@ footer a {
 .task{
     margin-left: 5%;
     margin-right: 5%;
+}
+li {
+    list-style-type: none;
 }

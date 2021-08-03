@@ -30,8 +30,9 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-let colors = ['red', 'purple', 'green', 'pink', 'yellow', 'grey', 'orange', 'lightgrey', 'brown', 'lightblue', 'blue', 'white', 'black']
-let count = 0
+let colors = ['red', 'purple', 'green', 'pink', 'yellow', 'grey', 'orange', 'lightgrey', 'brown', 'lightblue', 'blue', 'white', 'black',
+'CornflowerBlue', 'Chartreuse', 'DarkOliveGreen', 'DarkViolet', 'ForestGreen', 'PaleGreen', 'SandyBrown', 'YellowGreen']
+let count = 0;
 
 function colorChange() {
     let color = document.getElementById('color_select').value;
